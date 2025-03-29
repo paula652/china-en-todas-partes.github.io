@@ -15,10 +15,10 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
-    flex-direction: column; /* Apilar elementos en columna */
+    flex-direction: column;
 }
 
 .left-section {
@@ -28,15 +28,16 @@ body {
 }
 
 .china-flag {
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     margin-right: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
 }
 
 .china-text {
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.2;
 }
 
 .main-header {
@@ -202,7 +203,7 @@ body {
     .china-header {
         justify-content: space-between;
         padding: 1.5em;
-        flex-direction: row; /* Restaurar disposición original */
+        flex-direction: row;
     }
 
     .china-flag {
