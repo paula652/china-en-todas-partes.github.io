@@ -18,6 +18,7 @@ body {
     padding: 1em;
     width: 100%;
     box-sizing: border-box;
+    flex-direction: column; /* Apilar elementos en columna */
 }
 
 .left-section {
@@ -201,10 +202,7 @@ body {
     .china-header {
         justify-content: space-between;
         padding: 1.5em;
-    }
-
-    .left-section {
-        flex-direction: row;
+        flex-direction: row; /* Restaurar disposición original */
     }
 
     .china-flag {
