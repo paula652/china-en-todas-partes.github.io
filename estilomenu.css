@@ -12,36 +12,28 @@ body {
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
-    flex-wrap: wrap;
+    padding: 1.5em;
 }
 
 .left-section {
     display: flex;
     align-items: center;
-    flex-shrink: 0;
-    justify-content: center;
 }
 
 .china-flag {
     margin-right: 0.5em;
-    margin-left: 0.5em;
-}
-
-.center-section {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    white-space: nowrap;
+    width: 4em;
+    height: 4em;
 }
 
 .china-text {
     margin: 0;
     display: inline-block;
     vertical-align: middle;
+    font-size: 1.5em;
 }
 
 .main-header {
@@ -50,6 +42,11 @@ body {
     color: black;
     padding: 0.3em;
     text-align: center;
+    font-size: 1.2em;
+}
+
+.nav-menu {
+    display: none; /* Ocultar el menú por defecto */
 }
 
 .menu {
@@ -58,8 +55,8 @@ body {
 }
 
 .menu li {
-    display: inline-block;
-    margin: 0.3em;
+    display: block;
+    margin: 0.3em 0;
 }
 
 .menu li a {
@@ -67,7 +64,9 @@ body {
     text-decoration: none;
     background-color: #D8BFD8;
     color: #b695c0;
-    border-radius: 1.2em;
+    border-radius: 0.8em;
+    padding: 0.4em;
+    display: block;
 }
 
 .menu li a:hover {
@@ -77,33 +76,48 @@ body {
     border-radius: 0.6em;
 }
 
+.menu-toggle {
+    display: none; /* Ocultar el checkbox por defecto */
+}
+
+.menu-button {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none; /* Ocultar el botón por defecto */
+    color: black;
+}
+
+#menu-toggle:checked + .nav-menu {
+    display: block; /* Mostrar el menú cuando el checkbox está marcado */
+}
+
 .containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 1.2em;
+    padding: 0.8em;
 }
 
 .container {
-    width: 90%;
-    max-width: 18.75em;
-    height: auto;
-    background-color: #ADD8E6;
-    border: 0.06em solid #B0E0E6;
-    border-radius: 0.9em;
-    margin: 0.6em auto;
-    padding: 0.6em;
+    width: 95%;
+    max-width: none;
+    margin: 0.5em auto;
+    padding: 0.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     color: #2F4F4F;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    background-color: #ADD8E6;
+    border: 0.06em solid #B0E0E6;
+    border-radius: 0.9em;
 }
 
 .container-title {
     font-family: 'Rockwell', serif;
-    margin-bottom: 0.9em;
+    margin-bottom: 0.6em;
+    font-size: 1em;
 }
 
 .container p {
@@ -112,10 +126,10 @@ body {
 }
 
 .random-image {
-    width: 80%;
-    max-width: 12.5em;
+    width: 90%;
+    max-width: none;
     height: auto;
-    margin-top: 0.6em;
+    margin-top: 0.5em;
     border-radius: 0.6em;
 }
 
@@ -125,127 +139,85 @@ body {
 
 .footer {
     background-color: #E6E6FA;
-    padding: 0.6em;
+    padding: 0.5em;
     text-align: center;
 }
 
 .footer-content {
     background-color: #E6E6FA;
-    padding: 0.6em;
+    padding: 0.5em;
     border-radius: 0.9em;
     color: #4B0082;
     font-family: 'Rockwell', serif;
-    margin: 0.6em auto;
+    margin: 0.5em auto;
     width: 90%;
     max-width: 50em;
 }
 
 @media (min-width: 769px) {
     /* Estilos para PC */
-    .china-header {
-        font-size: 2.5em; /* Reducido de 3em a 2.5em */
-        padding: 1.5em; /* Reducido de 2em a 1.5em */
+    .menu-toggle, .menu-button {
+        display: none; /* Ocultar el checkbox y el botón en pantallas grandes */
     }
 
-    .china-flag {
-        width: 5em; /* Reducido de 6em a 5em */
-        height: 5em; /* Reducido de 6em a 5em */
+    .nav-menu {
+        display: block; /* Mostrar el menú en pantallas grandes */
     }
 
-    .china-text {
-        font-size: 1.8em; /* Reducido de 2em a 1.8em */
+    .menu {
+        text-align: center;
     }
 
-    .main-header {
-        font-size: 1.3em; /* Reducido de 1.5em a 1.3em */
+    .menu li {
+        display: inline-block;
+        margin: 0.3em;
     }
 
     .menu li a {
-        font-size: 1.1em; /* Reducido de 1.2em a 1.1em */
-        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
-        border-radius: 1em; /* Reducido de 1.2em a 1em */
+        font-size: 1.1em;
+        padding: 0.5em;
+        border-radius: 1em;
     }
 
     .containers {
-        padding: 1em; /* Reducido de 1.2em a 1em */
+        padding: 1em;
     }
 
     .container {
-        width: 85%; /* Reducido de 90% a 85% */
-        max-width: 16em; /* Reducido de 18.75em a 16em */
-        margin: 0.5em auto; /* Reducido de 0.6em auto a 0.5em auto */
-        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
-        font-size: 0.85em; /* Reducido de 0.9em a 0.85em */
-    }
-
-    .container-title {
-        font-size: 1em; /* Reducido de 1.1em a 1em */
-        margin-bottom: 0.8em; /* Reducido de 0.9em a 0.8em */
+        width: 85%;
+        max-width: 16em;
+        margin: 0.5em auto;
+        padding: 0.5em;
+        font-size: 0.85em;
     }
 
     .random-image {
-        width: 75%; /* Reducido de 80% a 75% */
-        max-width: 11em; /* Reducido de 12.5em a 11em */
-        margin-top: 0.5em; /* Reducido de 0.6em a 0.5em */
+        width: 75%;
+        max-width: 11em;
+        margin-top: 0.5em;
     }
 
-    .footer {
-        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
-    }
-
-    .footer-content {
-        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
-        margin: 0.5em auto; /* Reducido de 0.6em auto a 0.5em auto */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Estilos para Celular */
     .china-header {
-        font-size: 2em;
+        font-size: 2.5em;
         padding: 1.5em;
     }
 
     .china-flag {
-        width: 4em;
-        height: 4em;
+        width: 5em;
+        height: 5em;
     }
 
     .china-text {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .main-header {
-        font-size: 1.2em;
-    }
-
-    .menu li a {
-        font-size: 1em;
-        padding: 0.4em;
-        border-radius: 0.8em;
-    }
-
-    .containers {
-        padding: 0.8em;
-    }
-
-    .container {
-        width: 95%;
-        max-width: none;
-        margin: 0.5em auto;
-        padding: 0.5em;
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
 
     .container-title {
         font-size: 1em;
-        margin-bottom: 0.6em;
-    }
-
-    .random-image {
-        width: 90%;
-        max-width: none;
-        margin-top: 0.5em;
+        margin-bottom: 0.8em;
     }
 
     .footer {
