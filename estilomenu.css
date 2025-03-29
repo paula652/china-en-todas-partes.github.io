@@ -1,0 +1,259 @@
+body {
+    font-family: Pacifico, cursive;
+    text-align: center;
+    background-color: #E0FFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.china-header {
+    font-family: Rockwell, serif;
+    background-color: #FF6F6F;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.china-flag {
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+
+.center-section {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.china-text {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header {
+    font-family: Pacifico, cursive;
+    background-color: #FFFACD;
+    color: black;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.menu {
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0.3em;
+}
+
+.menu li a {
+    font-family: Rockwell, serif;
+    text-decoration: none;
+    background-color: #D8BFD8;
+    color: #b695c0;
+    border-radius: 1.2em;
+}
+
+.menu li a:hover {
+    background-color: lavender;
+    margin-top: -0.1em;
+    padding-bottom: 0.7em;
+    border-radius: 0.6em;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.2em;
+}
+
+.container {
+    width: 90%;
+    max-width: 18.75em;
+    height: auto;
+    background-color: #ADD8E6;
+    border: 0.06em solid #B0E0E6;
+    border-radius: 0.9em;
+    margin: 0.6em auto;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #2F4F4F;
+    font-size: 0.9em;
+}
+
+.container-title {
+    font-family: 'Rockwell', serif;
+    margin-bottom: 0.9em;
+}
+
+.container p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.random-image {
+    width: 80%;
+    max-width: 12.5em;
+    height: auto;
+    margin-top: 0.6em;
+    border-radius: 0.6em;
+}
+
+.rounded-image {
+    border-radius: 0.6em;
+}
+
+.footer {
+    background-color: #E6E6FA;
+    padding: 0.6em;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: #E6E6FA;
+    padding: 0.6em;
+    border-radius: 0.9em;
+    color: #4B0082;
+    font-family: 'Rockwell', serif;
+    margin: 0.6em auto;
+    width: 90%;
+    max-width: 50em;
+}
+
+@media (min-width: 769px) {
+    /* Estilos para PC */
+    .china-header {
+        font-size: 2.5em; /* Reducido de 3em a 2.5em */
+        padding: 1.5em; /* Reducido de 2em a 1.5em */
+    }
+
+    .china-flag {
+        width: 5em; /* Reducido de 6em a 5em */
+        height: 5em; /* Reducido de 6em a 5em */
+    }
+
+    .china-text {
+        font-size: 1.8em; /* Reducido de 2em a 1.8em */
+    }
+
+    .main-header {
+        font-size: 1.3em; /* Reducido de 1.5em a 1.3em */
+    }
+
+    .menu li a {
+        font-size: 1.1em; /* Reducido de 1.2em a 1.1em */
+        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
+        border-radius: 1em; /* Reducido de 1.2em a 1em */
+    }
+
+    .containers {
+        padding: 1em; /* Reducido de 1.2em a 1em */
+    }
+
+    .container {
+        width: 85%; /* Reducido de 90% a 85% */
+        max-width: 16em; /* Reducido de 18.75em a 16em */
+        margin: 0.5em auto; /* Reducido de 0.6em auto a 0.5em auto */
+        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
+        font-size: 0.85em; /* Reducido de 0.9em a 0.85em */
+    }
+
+    .container-title {
+        font-size: 1em; /* Reducido de 1.1em a 1em */
+        margin-bottom: 0.8em; /* Reducido de 0.9em a 0.8em */
+    }
+
+    .random-image {
+        width: 75%; /* Reducido de 80% a 75% */
+        max-width: 11em; /* Reducido de 12.5em a 11em */
+        margin-top: 0.5em; /* Reducido de 0.6em a 0.5em */
+    }
+
+    .footer {
+        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
+    }
+
+    .footer-content {
+        padding: 0.5em; /* Reducido de 0.6em a 0.5em */
+        margin: 0.5em auto; /* Reducido de 0.6em auto a 0.5em auto */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para Celular */
+    .china-header {
+        font-size: 2em;
+        padding: 1.5em;
+    }
+
+    .china-flag {
+        width: 4em;
+        height: 4em;
+    }
+
+    .china-text {
+        font-size: 1.5em;
+    }
+
+    .main-header {
+        font-size: 1.2em;
+    }
+
+    .menu li a {
+        font-size: 1em;
+        padding: 0.4em;
+        border-radius: 0.8em;
+    }
+
+    .containers {
+        padding: 0.8em;
+    }
+
+    .container {
+        width: 95%;
+        max-width: none;
+        margin: 0.5em auto;
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+
+    .container-title {
+        font-size: 1em;
+        margin-bottom: 0.6em;
+    }
+
+    .random-image {
+        width: 90%;
+        max-width: none;
+        margin-top: 0.5em;
+    }
+
+    .footer {
+        padding: 0.5em;
+    }
+
+    .footer-content {
+        padding: 0.5em;
+        margin: 0.5em auto;
+    }
+}

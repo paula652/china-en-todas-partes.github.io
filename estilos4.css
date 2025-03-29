@@ -1,0 +1,140 @@
+body {
+    background-color: #EEDBE5;
+    font-family: Rockwell, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-container {
+    width: 90%;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #D1F0E2;
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #CF3476;
+    font-family: 'Rockwell', serif;
+    font-size: 3em;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+a {
+    color: #4169E1;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+a:visited {
+    color: #800080;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    background-color: #f8f8f8;
+    border-radius: 0.4em;
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 0.06em solid #ddd;
+    padding: 0.8em;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+table:nth-of-type(2) {
+    margin-top: 1.5em;
+}
+
+table:nth-of-type(2) img {
+    max-width: 6em;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1);
+}
+
+table:nth-of-type(2) a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    background-color: #e0f7fa;
+    margin-top: 0.5em;
+}
+
+table:nth-of-type(2) a:hover {
+    background-color: #b2ebf2;
+}
+
+@media (min-width: 769px) {
+    /* Estilos para PC */
+    .main-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    table:nth-of-type(2) img {
+        max-width: 100px;
+    }
+
+    table:nth-of-type(2) a {
+        padding: 8px 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos para Celular */
+    .main-container {
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    th, td {
+        padding: 0.5em;
+    }
+
+    table:nth-of-type(2) img {
+        max-width: 4em;
+    }
+
+    table:nth-of-type(2) a {
+        padding: 0.3em 0.8em;
+        margin-top: 0.3em;
+    }
+}

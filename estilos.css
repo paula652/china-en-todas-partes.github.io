@@ -1,0 +1,194 @@
+body {
+    background-color: #EEDBE5;
+    font-family: Rockwell, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-container {
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    flex: 2;
+    padding: 1em;
+    background-color: #D1F0E2;
+    border-radius: 0.5em;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 1em;
+    background-color: #F8F8F8;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80em;
+    overflow-y: auto;
+}
+
+.sidebar img {
+    max-width: 100%;
+    width: 90%;
+    max-height: 30em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: #CF3476;
+    font-family: 'Rockwell', serif;
+    font-size: 3em;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+h2 {
+    color: #778899;
+    font-family: 'Rockwell', serif;
+    font-size: 2.5em;
+    text-shadow: 0.06em 0.06em 0.12em rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+h3 {
+    color: #9370DB;
+    font-family: 'Rockwell', serif;
+    font-size: 2em;
+    text-shadow: 0.06em 0.06em 0.12em rgba(0, 0, 0, 0.2);
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.4em;
+    margin: 0.5em auto;
+    display: block;
+}
+
+a {
+    color: #4169E1;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
+a:visited {
+    color: #800080;
+}
+
+.video-responsive {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 769px) {
+    /* Estilos para PC */
+    .main-container {
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        padding: 20px;
+        max-height: 1600px;
+    }
+
+    .sidebar img {
+        max-height: 500px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    img {
+        margin: 10px auto;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+
+    .video-responsive {
+        padding-bottom: 31.25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-height: none;
+    }
+
+    .content,
+    .sidebar {
+        flex: 1;
+        padding: 0.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .sidebar img {
+        max-height: 20em;
+    }
+}
