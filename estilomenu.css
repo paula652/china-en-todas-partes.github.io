@@ -49,9 +49,10 @@ body {
 }
 
 .nav-menu {
-    display: block; /* Cambiado de 'none' a 'block' */
+    display: block; /* Menú visible por defecto */
     width: 100%;
     box-sizing: border-box;
+    margin-top: 1em; /* Espacio entre el título y el menú */
 }
 
 .menu {
@@ -83,7 +84,7 @@ body {
 }
 
 .menu-toggle {
-    display: none; /* Ocultamos el botón del menú */
+    display: none; /* Oculta el botón del menú */
 }
 
 #menu-toggle:checked + .nav-menu {
