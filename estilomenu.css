@@ -12,13 +12,12 @@ body {
     color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
     padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
-    flex-direction: column;
 }
 
 .left-section {
@@ -50,17 +49,20 @@ body {
 }
 
 .nav-menu {
-    display: none;
+    display: none; /* Ocultar el menú por defecto */
+    width: 100%; /* Asegurar que el menú ocupe todo el ancho */
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
 }
 
 .menu {
     padding: 0;
     text-align: center;
+    list-style: none; /* Eliminar los puntos de la lista */
 }
 
 .menu li {
-    display: block;
-    margin: 0.3em 0;
+    display: block; /* Mostrar los elementos del menú en bloque */
+    margin: 0.3em 0; /* Agregar margen vertical */
 }
 
 .menu li a {
@@ -70,7 +72,7 @@ body {
     color: #b695c0;
     border-radius: 0.8em;
     padding: 0.4em;
-    display: block;
+    display: block; /* Mostrar los enlaces en bloque */
 }
 
 .menu li a:hover {
@@ -81,18 +83,17 @@ body {
 }
 
 .menu-toggle {
-    display: none;
-}
-
-.menu-button {
+    display: block; /* Mostrar el botón del menú en dispositivos móviles */
     font-size: 1.5em;
     cursor: pointer;
-    display: none;
     color: black;
+    background: none;
+    border: none;
+    padding: 0;
 }
 
 #menu-toggle:checked + .nav-menu {
-    display: block;
+    display: block; /* Mostrar el menú cuando el checkbox está marcado */
 }
 
 .containers {
@@ -159,12 +160,13 @@ body {
 }
 
 @media (min-width: 769px) {
-    .menu-toggle, .menu-button {
-        display: none;
+    .menu-toggle {
+        display: none; /* Ocultar el botón del menú en PC */
     }
 
     .nav-menu {
-        display: block;
+        display: block; /* Mostrar el menú en PC */
+        width: auto; /* Restaurar el ancho automático */
     }
 
     .menu {
