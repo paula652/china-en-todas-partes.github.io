@@ -12,28 +12,30 @@ body {
     color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     position: relative;
-    padding: 1.5em;
+    padding: 1em;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .left-section {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .china-flag {
-    margin-right: 0.5em;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
+    margin-right: 0;
+    margin-bottom: 0.5em;
 }
 
 .china-text {
     margin: 0;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .main-header {
@@ -197,13 +199,19 @@ body {
     }
 
     .china-header {
-        font-size: 2.5em;
+        justify-content: space-between;
         padding: 1.5em;
+    }
+
+    .left-section {
+        flex-direction: row;
     }
 
     .china-flag {
         width: 5em;
         height: 5em;
+        margin-right: 0.5em;
+        margin-bottom: 0;
     }
 
     .china-text {
@@ -226,31 +234,5 @@ body {
     .footer-content {
         padding: 0.5em;
         margin: 0.5em auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .china-header {
-        font-size: 2em;
-        padding: 1em;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .china-flag {
-        width: 3em;
-        height: 3em;
-        margin-right: 0;
-        margin-bottom: 0.5em;
-    }
-
-    .china-text {
-        font-size: 1.2em;
-    }
-}
-
-@media (max-width: 320px) {
-    .china-flag {
-        display: none;
     }
 }
