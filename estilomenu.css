@@ -49,20 +49,20 @@ body {
 }
 
 .nav-menu {
-    display: none; /* Ocultar el menú por defecto */
-    width: 100%; /* Asegurar que el menú ocupe todo el ancho */
-    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu {
     padding: 0;
     text-align: center;
-    list-style: none; /* Eliminar los puntos de la lista */
+    list-style: none;
 }
 
 .menu li {
-    display: block; /* Mostrar los elementos del menú en bloque */
-    margin: 0.3em 0; /* Agregar margen vertical */
+    display: block;
+    margin: 0.3em 0;
 }
 
 .menu li a {
@@ -72,7 +72,7 @@ body {
     color: #b695c0;
     border-radius: 0.8em;
     padding: 0.4em;
-    display: block; /* Mostrar los enlaces en bloque */
+    display: block;
 }
 
 .menu li a:hover {
@@ -83,7 +83,7 @@ body {
 }
 
 .menu-toggle {
-    display: block; /* Mostrar el botón del menú en dispositivos móviles */
+    display: block;
     font-size: 1.5em;
     cursor: pointer;
     color: black;
@@ -93,7 +93,7 @@ body {
 }
 
 #menu-toggle:checked + .nav-menu {
-    display: block; /* Mostrar el menú cuando el checkbox está marcado */
+    display: block;
 }
 
 .containers {
@@ -161,12 +161,12 @@ body {
 
 @media (min-width: 769px) {
     .menu-toggle {
-        display: none; /* Ocultar el botón del menú en PC */
+        display: none;
     }
 
     .nav-menu {
-        display: block; /* Mostrar el menú en PC */
-        width: auto; /* Restaurar el ancho automático */
+        display: block;
+        width: auto;
     }
 
     .menu {
